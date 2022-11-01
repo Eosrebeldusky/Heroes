@@ -10,7 +10,7 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
   
-  heroes: Hero[] = [];
+  heroes: Hero[] = []; //property declaration
 
 
   hero: Hero ={
@@ -22,11 +22,11 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroes = this.heroService.getHeroes(); // Function to get heroes From heroesServices function
   }
 
   ngOnInit(): void {
-    this.getHeroes()
+    this.getHeroes() //calling getheroes
   }
   
 

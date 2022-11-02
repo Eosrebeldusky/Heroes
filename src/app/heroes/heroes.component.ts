@@ -22,7 +22,7 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes(); // Function to get heroes From heroesServices function
+    this.heroService.getHeroes().subscribe(heroes=>this.heroes = heroes) //consuming observable    
   }
 
   ngOnInit(): void {

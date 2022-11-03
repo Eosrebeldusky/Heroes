@@ -13,12 +13,6 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[] = []; //property declaration
 
 
-  hero: Hero ={
-    id: 1,
-    name:'Windstorm'
-  }
-
-
   constructor(private heroService: HeroService) { }
 
   getHeroes(): void {

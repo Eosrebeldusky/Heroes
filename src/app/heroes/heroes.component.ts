@@ -16,10 +16,8 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[] = []; //property declaration
 
 
-  constructor(
-    private route: ActivatedRoute,
-    private heroService: HeroService,
-    private location: Location    
+  constructor(    
+    private heroService: HeroService,    
     ) { }
 
   getHeroes(): void {

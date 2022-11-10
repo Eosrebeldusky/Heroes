@@ -24,10 +24,4 @@ export class HeroesComponent implements OnInit {
     this.getHeroes() //calling getheroes
   }
   
-
-  selectedHero? : Hero;
-  onSelect(hero:Hero):void{
-    this.selectedHero = hero
-  } 
-  
 }

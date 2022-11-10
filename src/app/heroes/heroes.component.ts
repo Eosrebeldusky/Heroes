@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
 
 
 @Component({
@@ -13,7 +16,11 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[] = []; //property declaration
 
 
-  constructor(private heroService: HeroService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private heroService: HeroService,
+    private location: Location    
+    ) { }
 
   getHeroes(): void {
     this.heroService.getHeroes()

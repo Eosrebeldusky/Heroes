@@ -6,7 +6,10 @@
         <span class="badge">{{hero.id}}</span>
         <span class="name">{{hero.name}}</span>
     </a>
+    <button type="button" class="delete" title="delete hero"
+  (click)="delete(hero)">x</button>
     </li>
+
 </ul>
 
 
@@ -20,8 +23,7 @@
   </button>
 </div>
 
-<button type="button" class="delete" title="delete hero"
-  (click)="delete(hero)">x</button>
+
 
 <app-rancio></app-rancio>
 
